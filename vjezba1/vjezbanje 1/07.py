@@ -1,18 +1,18 @@
 def drugi_najveci(lista):
-    najveci = None
-    drugi = None
+    najveci = 0
+    drugi = 0
 
     for x in lista:
-        if najveci is None or x > najveci:
+        if x > najveci:
             drugi = najveci
             najveci = x
-        elif x != najveci and (drugi is None or x > drugi):
+        elif x != najveci and  x > drugi: 
             drugi = x
 
     return drugi
 
 def main():
-    lista = [3, 5, 2, 8, 1]
+    lista = [3, 5, 2, 8, 1, 7, 7, 9]
     rezultat = drugi_najveci(lista)
     print(rezultat)
 
