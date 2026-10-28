@@ -1,0 +1,10 @@
+trajektna luka - pazar
+pazar - HNK
+HNK - opcina
+opcina - brodarica
+opcina - sukoisanska
+brodarica - kopilica
+sukoisanska - slobodna dalmacija
+slobodna dalmacija - poljud
+poljud - kineski zid
+kineski zid - spinut studentski dom

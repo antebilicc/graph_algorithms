@@ -9,7 +9,7 @@ def main():
     mijesano.extend([6, "A"]) #dodavanje više elemenata na kraj, npr 6 i A
     print(mijesano)
 
-    mijesano .insert(1, "element") #dodavanje elementa na indeks (k, element)
+    mijesano.insert(1, "element") #dodavanje elementa na indeks (k, element)
     print(mijesano)
 
     mijesano.remove("element") #uklanjanje prvog pojavljivanje iz liste gdje matcha "element"
