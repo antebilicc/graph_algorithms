@@ -2,10 +2,8 @@ def fun(matrix,i):
     if not matrix:
         return []
 
-    lst = []
-    lst += [matrix[0][i]]
 
-    return lst + fun(matrix[1:],i)
+    return [matrix[0][i]] + fun(matrix[1:],i)
 
 def main():
     print(fun([

@@ -1,4 +1,7 @@
 def fun(d):
+    if len(d) == 0:
+        return None
+
     if len(d) == 1:
         return list(d.keys())[0]
     prvi = list(d.keys())[0]
