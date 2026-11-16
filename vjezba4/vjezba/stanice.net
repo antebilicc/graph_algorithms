@@ -1,0 +1,23 @@
+*Vertices 11
+1 "HNK"
+2 "brodarica"
+3 "kineski zid"
+4 "kopilica"
+5 "opcina"
+6 "pazar"
+7 "poljud"
+8 "slobodna dalmacija"
+9 "spinut studentski dom"
+10 "sukoisanska"
+11 "trajektna luka"
+*Edges
+1 6
+1 5
+2 4
+2 5
+3 9
+3 7
+5 10
+6 11
+7 8
+8 10
