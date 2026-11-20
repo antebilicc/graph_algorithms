@@ -21,7 +21,7 @@ def read_pajek(filename):
             continue
 
         elif line.startswith("*ArcsList"):
-            section = "arcs"
+            section = "arcslist"
             directed = True
             continue
 
@@ -84,6 +84,9 @@ def matrica_susjedstva(graph, names):
                 matrix[i][j] = graph[names[i]][names[j]]
 
     return matrix
+
+def broj_vrhova(graph):
+    return len(graph.keys())
 
 
 def main():
