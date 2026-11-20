@@ -43,7 +43,7 @@ def read_pajek(filename):
             u = int(parts[0])
             v = int(parts[1])
                         
-            if len(parts) == 3:
+            if len(parts) == 3: #da nije težinski graf, onda ću krenit sa set() gore i onda bi dodavao sa .add
                 w = float(parts[2])
             
                 if w.is_integer():
@@ -103,6 +103,28 @@ def matrix_incidencije(graph, directed):
             matrix[v - 1][j] = graph[u][v] 
 
     return matrix
+
+def stupnjevi_vrha(graph):
+    deg = {}
+    for u in graph:
+        deg[u] = len(graph[u])
+    return deg
+
+def broj_vrhova(graph):
+    return len(graph)
+
+def ulazni_izlazni_stupnjevi(graph):
+    in_deg = {}
+    out_deg = {}
+    for u in graph:
+        out_deg[u] = len(graph[u])
+        in_deg[u] = 0
+    
+    for u in graph:
+        for v in graph[u]:
+            in_deg[v] += 1
+
+    return in_deg, out_deg
 
 def main():
 
